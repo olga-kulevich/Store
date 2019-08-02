@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { SongModule } from './songs/songs.module';
 
 import { Store } from './store';
 
@@ -13,7 +14,8 @@ import { Store } from './store';
     Store
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SongModule
   ],
   bootstrap: [AppComponent]
 })
